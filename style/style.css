@@ -1,0 +1,18 @@
+.songList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.songList div {
+  width: 20%;
+  height: 100px;
+  margin: 10px;
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.songList div p {
+  margin: 0;
+}
