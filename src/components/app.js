@@ -3,11 +3,13 @@ import { Component } from 'react';
 
 import SongList from '../containers/song-list';
 
+let songsDir = './songs/';
+
 export default class App extends Component {
   render() {
     return (
       <div>
-        <SongList />
+        <SongList songsDir={songsDir} />
       </div>
     );
   }

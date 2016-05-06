@@ -8,7 +8,7 @@ class SongList extends Component {
     var self = this;
     return this.props.songs.map(function(song, key) {
       return (
-        <Song key={key} song={song}/>
+        <Song key={key} song={song} songsDir={self.props.songsDir} />
       )
     });
   }

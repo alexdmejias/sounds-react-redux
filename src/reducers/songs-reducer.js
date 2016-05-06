@@ -1,6 +1,6 @@
-import songs from '../../songs-data.js';
+import songsData from '../../songs-data.js';
 
-export default function(songs = songs, action) {
+export default function(songs = songsData, action) {
   switch(action.type) {
     case 'play':
       console.log('playing...', action.song);
@@ -8,6 +8,5 @@ export default function(songs = songs, action) {
     default:
       console.log('something else');
       return songs;
-      break;
   }
 }
